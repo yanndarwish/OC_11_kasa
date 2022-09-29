@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+:root {
+	--bd-radius-0: 5px;
+	--bd-radius-1: 10px;
+	--bd-radius-2: 25px;
+	/* colors */
+	--clr-primary: #ff6060;
+
+	/* font */
+	--ff: "Montserrat";
+	/* font size */
+	--fs-10: 10px;
+	--fs-12: 12px;
+	--fs-13: 13px;
+	--fs-14: 14px;
+	--fs-18: 18px;
+	--fs-24: 24px;
+	--fs-36: 36px;
+	--fs-48: 48px;
+	--fs-96: 96px;
+	--fs-288: 288px;
+
+	/* font weight */
+	--fw-400: 400;
+	--fw-500: 500;
+	--fw-700: 700;
+}
+
+html {
+	height: 100%;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 230px;
+	font-family: var(--ff);
+	font-weight: var(--fw-500 );
+}
+
+a {
+	text-decoration: none;
+	color: var(--clr-primary);
+}
+
+ul {
+    list-style: none;
+}
+
+/*  */
+/* utils */
+/*  */
+.flex {
+	display: flex;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.main-wrapper {
+	padding-inline: 20px;
+	height: 100%;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.main-theme {
+	color: white;
+	background-color: var(--clr-primary);
+	border-radius: var(--bd-radius-1);
+	-webkit-border-radius: var(--bd-radius-1);
+	-moz-border-radius: var(--bd-radius-1);
+	-ms-border-radius: var(--bd-radius-1);
+	-o-border-radius: var(--bd-radius-1);
+}
+
+.home-main-container {
+	display: grid;
+	grid-template-columns: 1;
+	gap: 20px;
+}
+
+.about-main-container {
+    flex-direction: column;
+    gap:20px;
+}
+
+
+@media (min-width: 481px) {
+	body {
+		padding-bottom: 250px;
+	}
+	.main-wrapper {
+		padding-inline: 100px;
+	}
+
+	.home-main-container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 60px;
+		padding: 50px;
+		background-color: #f6f6f6;
+		border-radius: var(--bd-radius-2);
+		-webkit-border-radius: var(--bd-radius-2);
+		-moz-border-radius: var(--bd-radius-2);
+		-ms-border-radius: var(--bd-radius-2);
+		-o-border-radius: var(--bd-radius-2);
+	}
+
+    .about-main-container {
+        gap:30px;
+        padding-inline:60px;
+    }
+}

@@ -1,0 +1,39 @@
+.main-header {
+	margin-block: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	height: 47px;
+	width: 145px;
+	background-image: url("../utils/assets/logo-S.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-nav {
+	gap: 20px;
+	font-size: 12px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+@media (min-width: 481px) {
+	.main-header {
+		margin-block: 40px;
+	}
+
+	.logo {
+		height: 68px;
+		width: 210px;
+		background-image: url("../utils/assets/logo-M.png");
+	}
+
+	.main-nav {
+		gap: 40px;
+		font-size: 24px;
+	}
+}

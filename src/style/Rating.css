@@ -1,0 +1,17 @@
+.rating-wrapper {
+	gap: 5px;
+}
+
+.star-icon {
+	width: 15px;
+}
+
+@media (min-width: 481px) {
+	.rating-wrapper {
+		gap: 10px;
+	}
+
+	.star-icon {
+		width: 30px;
+	}
+}

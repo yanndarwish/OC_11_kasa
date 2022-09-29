@@ -1,0 +1,31 @@
+.tag-wrapper {
+	gap: 10px;
+}
+
+.tag {
+	min-width: 84px;
+	/* width:fit-content; */
+	padding-inline:15px;
+	height: 18px;
+	font-size: var(--fs-10);
+	border-radius: var(--bd-radius-0);
+	-webkit-border-radius: var(--bd-radius-0);
+	-moz-border-radius: var(--bd-radius-0);
+	-ms-border-radius: var(--bd-radius-0);
+	-o-border-radius: var(--bd-radius-0);
+	color: white;
+	background-color: var(--clr-primary);
+}
+
+@media (min-width: 481px) {
+	.tag {
+        min-width:115px;
+        height:25px;
+        font-size: var(--fs-14);
+        border-radius: var(--bd-radius-1) ;
+        -webkit-border-radius: var(--bd-radius-1) ;
+        -moz-border-radius: var(--bd-radius-1) ;
+        -ms-border-radius: var(--bd-radius-1) ;
+        -o-border-radius: var(--bd-radius-1) ;
+}
+}

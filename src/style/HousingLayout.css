@@ -1,0 +1,87 @@
+.housing-main-infos {
+	flex-direction: column;
+	margin-bottom: 15px;
+    gap:15px;
+}
+
+.housing-infos-1 {
+	flex-direction: column;
+	gap: 10px;
+	color: var(--clr-primary);
+}
+
+.housing-title {
+	font-size: var(--fs-18);
+	font-weight: var(--fw-500);
+}
+
+.housing-location {
+	font-size: var(--fs-14);
+	font-weight: var(--fw-500);
+}
+
+.housing-infos-2 {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.housing-profile {
+    height:100%;
+	align-items: center;
+}
+
+.housing-profile-name {
+	width: 10ch;
+	font-size: var(--fs-12);
+	font-weight: var(--fw-500);
+	color: var(--clr-primary);
+}
+
+.housing-profile img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+@media (min-width: 481px) {
+	.housing-main-infos {
+		flex-direction: row;
+        justify-content: space-between;
+		margin-bottom: 30px;
+        gap:0;
+	}
+
+	.housing-title {
+		font-size: var(--fs-36);
+	}
+
+	.housing-location {
+		font-size: var(--fs-18);
+	}
+
+	.housing-infos-2 {
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.housing-profile {
+        width: 100%;
+        justify-content: flex-end;
+		align-items: flex-start;
+		margin-top: 0;
+	}
+
+	.housing-profile img {
+		width: 64px;
+		height: 64px;
+	}
+
+	.housing-profile-name {
+		font-size: var(--fs-18);
+	}
+}

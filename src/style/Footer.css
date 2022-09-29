@@ -1,0 +1,27 @@
+.main-footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	flex-direction: column;
+	height: 210px;
+	color: white;
+	background-color: black;
+	gap: 30px;
+}
+
+.logo-footer {
+	height: 40px;
+	width: 122px;
+	background-image: url("../utils/assets/logo-footer.png");
+}
+
+.footer-credit {
+	font-size: var(--fs-12);
+}
+
+@media (min-width: 481px) {
+	.footer-credit {
+		font-size: var(--fs-24);
+	}
+}
