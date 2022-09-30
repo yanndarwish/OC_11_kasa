@@ -1,4 +1,6 @@
+// dependencies
 import { useRouteError, Link } from "react-router-dom"
+// components
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 
@@ -16,7 +18,7 @@ const Error = () => {
 						<p className="error-message">
 							Oups! La page que vous demandez n'existe pas.
 						</p>
-						<Link to="/home" className="error-link">
+						<Link to="/" className="error-link">
 							Retourner sur la page d’accueil
 						</Link>
 					</div>

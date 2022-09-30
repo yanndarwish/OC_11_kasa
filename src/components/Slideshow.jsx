@@ -1,3 +1,4 @@
+// assets
 import leftArrow from "../utils/assets/slide-arrow-left.svg"
 import rightArrow from "../utils/assets/slide-arrow-right.svg"
 

@@ -1,3 +1,4 @@
+// assets
 import arrow from "../utils/assets/arrow.svg"
 
 const AboutDropdown = ({ name, description }) => {

@@ -17,8 +17,8 @@ import "./style/Thumb.css"
 import "./style/Error-404.css"
 import "./style/AboutBanner.css"
 import "./style/AboutDropdown.css"
-import './style/Tag.css'
-import './style/Rating.css'
+import "./style/Tag.css"
+import "./style/Rating.css"
 import "./style/HousingDropdown.css"
 import "./style/Slideshow.css"
 import "./style/HousingLayout.css"
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
 		errorElement: <Error />,
 		children: [
 			{
-				path: "/home",
+				path: "/",
 				element: <Home />,
 			},
 			{

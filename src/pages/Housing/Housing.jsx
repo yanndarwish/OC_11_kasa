@@ -8,8 +8,8 @@ import Slideshow from "../../components/Slideshow"
 
 const Housing = () => {
 	let { housingId } = useParams()
-	const housing = JSON.parse(localStorage.getItem(housingId))
-	
+	const housing = JSON.parse(localStorage.getItem(`housing-${housingId}`))
+
 	return (
 		<div className="housing-main-container">
 			<div className="slideshow-container">

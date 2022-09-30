@@ -1,12 +1,12 @@
 .tag-wrapper {
 	gap: 10px;
+	flex-wrap: wrap;
 }
 
 .tag {
 	min-width: 84px;
-	/* width:fit-content; */
+	min-height:18px;
 	padding-inline:15px;
-	height: 18px;
 	font-size: var(--fs-10);
 	border-radius: var(--bd-radius-0);
 	-webkit-border-radius: var(--bd-radius-0);

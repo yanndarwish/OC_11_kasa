@@ -1,29 +1,37 @@
-import { Link, useLocation } from "react-router-dom"
+// Dependencies
+import { Link } from "react-router-dom"
 
 const Header = () => {
-	const location = useLocation()
-	if (location.pathname === '/home') {
-		document.getElementById('home').classList.add('active')
-		document.getElementById('about').classList.remove('active')
-	} else if (location.pathname === '/about') {
-		document.getElementById("about").classList.add("active")
-		document.getElementById("home").classList.remove("active")
+	const handleClick = (option) => {
+		if (option === "home") {
+			document.getElementById("about").classList.remove("active")
+			document.getElementById("home").classList.add("active")
+		} else {
+			document.getElementById("about").classList.add("active")
+			document.getElementById("home").classList.remove("active")
+		}
 	}
 
 	return (
 		<header className="main-header flex">
-			<Link to="/home">
+			<Link to="/" onClick={() => handleClick("home")}>
 				<div className="logo"></div>
 			</Link>
 			<nav className="main-nav flex">
 				<Link
-					to="/home"
+					to="/"
 					id="home"
 					className="nav-item active"
+					onClick={() => handleClick("home")}
 				>
 					ACCUEIL
 				</Link>
-				<Link to="/about" id="about" className="nav-item">
+				<Link
+					to="/about"
+					id="about"
+					className="nav-item"
+					onClick={() => handleClick("about")}
+				>
 					A PROPOS
 				</Link>
 			</nav>

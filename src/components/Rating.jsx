@@ -1,3 +1,4 @@
+// assets
 import star from "../utils/assets/star-icon.svg"
 import starActive from "../utils/assets/star-icon-active.svg"
 
