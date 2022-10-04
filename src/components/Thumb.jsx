@@ -2,13 +2,9 @@
 import { Link } from "react-router-dom"
 
 const Thumb = ({ data }) => {
-	const handleClick = () => {
-		localStorage.setItem(`housing-${data.id}`, JSON.stringify(data))
-	}
-
 	return (
 		<Link to={`/housing/${data.id}`}>
-			<article className="thumb main-theme flex" onClick={() => handleClick()}>
+			<article className="thumb main-theme flex" >
 				<img
 					src={data.pictures[0]}
 					alt={`${data.title} thumb`}

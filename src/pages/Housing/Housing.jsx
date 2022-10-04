@@ -1,6 +1,7 @@
 // dependencies
 import { useParams } from "react-router-dom"
 // components
+import datas from "../../data/data"
 import Tags from "../../components/Tags"
 import Rating from "../../components/Rating"
 import HousingDropdown from "../../components/HousingDropdown"
@@ -8,7 +9,7 @@ import Slideshow from "../../components/Slideshow"
 
 const Housing = () => {
 	let { housingId } = useParams()
-	const housing = JSON.parse(localStorage.getItem(`housing-${housingId}`))
+	const housing = datas.find((item) => item.id === housingId)
 
 	return (
 		<div className="housing-main-container">
