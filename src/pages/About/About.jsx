@@ -1,6 +1,6 @@
 // components
-import AboutBanner from "../../components/AboutBanner"
-import AboutDropdown from "../../components/AboutDropdown"
+import Banner from "../../components/Banner"
+import Dropdown from "../../components/Dropdown"
 
 const About = () => {
 	const aboutNames = ["Fiabilité", "Respect", "Service", "Sécurité"]
@@ -14,13 +14,13 @@ const About = () => {
 
 	return (
 		<div className="about">
-			<AboutBanner />
+			<Banner name="about" />
 			<section className="about-main-container flex">
 				{aboutNames.map((value, index) => (
-					<AboutDropdown
+					<Dropdown
 						key={`${aboutNames}-${index}`}
 						name={aboutNames[index]}
-						description={aboutDescriptions[index]}
+						content={aboutDescriptions[index]}
 					/>
 				))}
 			</section>

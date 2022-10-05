@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom"
 import datas from "../../data/data"
 import Tags from "../../components/Tags"
 import Rating from "../../components/Rating"
-import HousingDropdown from "../../components/HousingDropdown"
+import Dropdown from "../../components/Dropdown"
 import Slideshow from "../../components/Slideshow"
 
 const Housing = () => {
@@ -35,8 +35,8 @@ const Housing = () => {
 				</div>
 			</section>
 			<section className="housing-dropdown-container flex">
-				<HousingDropdown name="Description" content={housing.description} />
-				<HousingDropdown name="Équipements" content={housing.equipments} />
+				<Dropdown name="Description" content={housing.description} />
+				<Dropdown name="Équipements" content={housing.equipments} />
 			</section>
 		</div>
 	)

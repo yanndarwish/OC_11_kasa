@@ -15,6 +15,12 @@
 	margin-bottom: 20px;
 }
 
+.about-banner {
+	height: 223px;
+	width: 100%;
+	background-image: url("../utils/assets/about-banner-S.png");
+}
+
 .banner-overlay {
 	position: absolute;
 	top: 0;
@@ -48,6 +54,11 @@
 		-moz-border-radius: var(--bd-radius-2);
 		-ms-border-radius: var(--bd-radius-2);
 		-o-border-radius: var(--bd-radius-2);
+	}
+
+	.about-banner {
+		margin-bottom: 40px;
+		background-image: url("../utils/assets/about-banner-M.png");
 	}
 
 	.banner-overlay {

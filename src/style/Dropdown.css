@@ -3,11 +3,11 @@
 	gap: 20px;
 }
 
-.housing-dropdown {
+.dropdown {
 	position: relative;
 }
 
-.housing-dropdown-header {
+.dropdown-header {
 	justify-content: space-between;
 	align-items: center;
 	padding-inline: 11px;
@@ -21,7 +21,7 @@
 	-o-border-radius: var(--bd-radius-0);
 }
 
-.housing-dropdown-title {
+.dropdown-title {
 	font-size: var(--fs-13);
 	font-weight: var(--fw-500);
 }
@@ -36,7 +36,7 @@
 	-o-transition: 0.2s;
 }
 
-.housing-dropdown-content {
+.dropdown-content {
 	height: 0;
 	padding-inline: 11px;
 	overflow: hidden;
@@ -56,7 +56,7 @@
 	background-color: #f6f6f6;
 }
 
-.housing-dropdown-content-open {
+.dropdown-content-open {
 	height: fit-content;
 	padding-block: 20px;
 }
@@ -76,8 +76,12 @@
 		gap: 76px;
 	}
 
-	.housing-dropdown {
+	.dropdown {
 		width: 100%;
+	}
+
+	.about-dropdown-title {
+		font-size: var(--fs-24);
 	}
 
 	.housing-dropdown-title {
@@ -87,6 +91,11 @@
 	.arrow-icon {
 		width: 24px;
 		height: 16px;
+	}
+
+	.about-dropdown-content {
+		font-size: var(--fs-24);
+		padding-inline: 18px;
 	}
 
 	.housing-dropdown-content {
