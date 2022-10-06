@@ -1,4 +1,5 @@
 // dependencies
+import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
 
 const Thumb = ({ data }) => {
@@ -14,6 +15,14 @@ const Thumb = ({ data }) => {
 			</article>
 		</Link>
 	)
+}
+
+Thumb.propTypes = {
+	data: PropTypes.object.isRequired,
+}
+
+Thumb.defaultProps = {
+	data: {},
 }
 
 export default Thumb

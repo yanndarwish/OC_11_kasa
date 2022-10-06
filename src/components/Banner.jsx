@@ -1,3 +1,6 @@
+// dependencies
+import PropTypes from "prop-types"
+
 const Banner = ({ name }) => {
 	if (name === "about") {
 		return (
@@ -12,6 +15,14 @@ const Banner = ({ name }) => {
 			<h1 className="banner-title">Chez vous, partout et ailleurs</h1>
 		</div>
 	)
+}
+
+Banner.propTypes = {
+	name: PropTypes.string.isRequired,
+}
+
+Banner.defaultProps = {
+	name: "",
 }
 
 export default Banner

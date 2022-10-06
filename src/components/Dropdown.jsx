@@ -1,3 +1,5 @@
+// dependencies
+import PropTypes from "prop-types"
 // assets
 import arrow from "../utils/assets/arrow.svg"
 
@@ -91,6 +93,19 @@ const Dropdown = ({ name, content }) => {
 			</div>
 		</article>
 	)
+}
+
+Dropdown.propTypes = {
+	name: PropTypes.string.isRequired,
+	content: PropTypes.oneOfType([
+		PropTypes.string.isRequired,
+		PropTypes.array.isRequired,
+	]),
+}
+
+Dropdown.defaultProps = {
+	name: "",
+	content: "",
 }
 
 export default Dropdown

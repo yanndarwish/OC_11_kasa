@@ -1,3 +1,5 @@
+// dependencies
+import PropTypes from "prop-types"
 // assets
 import leftArrow from "../utils/assets/slide-arrow-left.svg"
 import rightArrow from "../utils/assets/slide-arrow-right.svg"
@@ -51,6 +53,14 @@ const Slideshow = ({ pictures }) => {
 			)}
 		</div>
 	)
+}
+
+Slideshow.propTypes = {
+	pictures: PropTypes.array.isRequired,
+}
+
+Slideshow.defaultProps = {
+	pictures: [],
 }
 
 export default Slideshow

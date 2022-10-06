@@ -1,3 +1,5 @@
+// dependencies
+import PropTypes from "prop-types"
 // assets
 import star from "../utils/assets/star-icon.svg"
 import starActive from "../utils/assets/star-icon-active.svg"
@@ -25,6 +27,14 @@ const Rating = ({ rating }) => {
 			)}
 		</div>
 	)
+}
+
+Rating.propTypes = {
+	rating: PropTypes.number.isRequired,
+}
+
+Rating.defaultProps = {
+	rating: 0,
 }
 
 export default Rating
