@@ -8,19 +8,19 @@ const Rating = ({ rating }) => {
 	const range = [1, 2, 3, 4, 5]
 	return (
 		<div className="rating-wrapper flex">
-			{range.map((index) =>
-				rating >= index ? (
+			{range.map((item) =>
+				rating >=  item? (
 					<img
 						src={starActive}
 						alt="star-icon"
-						key={index.toString()}
+						key={item.toString()}
 						className="star-icon star-icon-active"
 					/>
 				) : (
 					<img
 						src={star}
 						alt="star-icon"
-						key={index.toString()}
+						key={item.toString()}
 						className="star-icon"
 					/>
 				)
