@@ -1,13 +1,9 @@
 // Dependecies
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-// Pages
-import Root from "./components/Root"
-import About from "./pages/About/About"
-import Home from "./pages/Home/Home"
-import Housing from "./pages/Housing/Housing"
-import Error from "./pages/Error/Error"
+import { RouterProvider } from "react-router-dom"
+// components
+import Router from "./rooter/Rooter"
 // CSS imports
 import "./style/common.css"
 import "./style/Header.css"
@@ -21,27 +17,5 @@ import "./style/Dropdown.css"
 import "./style/Slideshow.css"
 import "./style/HousingLayout.css"
 
-const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Root />,
-		errorElement: <Error />,
-		children: [
-			{
-				path: "/",
-				element: <Home />,
-			},
-			{
-				path: "/about",
-				element: <About />,
-			},
-			{
-				path: "/housing/:housingId",
-				element: <Housing />,
-			},
-		],
-	},
-])
-
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<RouterProvider router={router} />)
+root.render(<RouterProvider router={Router} />)
